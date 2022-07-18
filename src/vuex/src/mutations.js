@@ -2,10 +2,10 @@ import { forEachValue } from '../utils'
 
 export function setupMutations(store, mutations) {
   store.mutations = {}
-  
+
   forEachValue(mutations, (key, func) => {
     // 监听方法 （把回调函数推入目标事件的监听函数队列里去）
-    store.mutations[key] = (payload) => {
+    store.mutations[key] = payload => {
       func.call(store, store.state, payload)
     }
   })

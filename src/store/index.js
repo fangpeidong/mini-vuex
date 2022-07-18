@@ -8,12 +8,12 @@ export default createStore({
     double: state => state.count * 2
   },
   mutations: {
-    addCount(state) {
-      state.count++
+    addCount(state, payload = 1) {
+      state.count = state.count + payload
     }
   },
   actions: {
-    asyncAddCount(store, payload) {
+    asyncAddCount(store, payload = 1) {
       store.commit('addCount', payload)
     }
   }
