@@ -24,7 +24,7 @@ class Store {
 export function createStore(options) {
   // 单例模式
   if (storeInstall) {
-    return storeInstall
+    return
   }
   storeInstall = new Store(options)
   return storeInstall
