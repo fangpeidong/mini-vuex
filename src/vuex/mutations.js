@@ -1,4 +1,4 @@
-import { forEachValue } from '../utils'
+import { forEachValue } from './utils'
 
 export function setupMutations(store, mutations) {
   store.mutations = {}

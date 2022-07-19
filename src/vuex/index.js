@@ -1,8 +1,8 @@
 import { inject } from 'vue'
-import { setupState } from './src/state'
-import { setupGetters } from './src/getters'
-import { setupMutations } from './src/mutations'
-import { setupActions } from './src/actions'
+import { setupState } from './state'
+import { setupGetters } from './getters'
+import { setupMutations } from './mutations'
+import { setupActions } from './actions'
 
 const storeKey = 'store'
 let storeInstall = null

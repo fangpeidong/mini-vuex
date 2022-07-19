@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { forEachValue } from '../utils'
+import { forEachValue } from './utils'
 
 export function setupGetters(store, getters) {
   store.getters = {}

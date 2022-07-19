@@ -1,4 +1,4 @@
-import { forEachValue } from '../utils'
+import { forEachValue } from './utils'
 
 export function setupActions(store, actions) {
   store.actions = {}
